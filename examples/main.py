@@ -3,10 +3,8 @@
 import sys
 from kafka import KafkaProducer, KafkaConsumer
 from kafka.errors import KafkaError
-from kafka.partitioner
 
-# TOPIC_NAME = "mytopic"
-TOPIC_NAME = "test-topic"
+TOPIC_NAME = "mytopic"
 BROKER = "localhost:9092"
 
 
@@ -17,7 +15,7 @@ def run_producer():
     """
     producer = KafkaProducer(
         bootstrap_servers=[BROKER],
-        acks=1,  # Require one ack
+        acks=1,  # Require one ack from leader
         # compression_type="snappy",
         # linger_ms=5000,
         # batch_size=100 * 1024
