@@ -1,0 +1,4 @@
+dockervol
+tmp
+__pycache__
+.env
