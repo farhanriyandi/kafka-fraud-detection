@@ -4,6 +4,7 @@
 1. Clone the repo
     ```
     git clone https://github.com/farhanriyandi/kafka-fraud-detection.git
+    cd kafka-fraud-detection
     ```   
 2. Start the docker containers
     ```
