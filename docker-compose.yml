@@ -1,7 +1,7 @@
 services:
   kafka:
     image: bitnami/kafka:3.7.1
-    container_name: kafka
+    container_name: my-kafka
     hostname: kafka
     ports:
       - 9092:9092
@@ -19,7 +19,7 @@ services:
       - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT
   kafka-ui:
     image: provectuslabs/kafka-ui:v0.7.2
-    container_name: kafka-ui
+    container_name: my-kafka-ui
     ports:
       - 8080:8080
     environment:
