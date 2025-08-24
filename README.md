@@ -43,7 +43,7 @@ It simulates transactions, detects fraud risk, and publishes transformed message
      kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic transactions_scored
      ```
 
-4. Create a virtual environment **For Linux/macOS:**
+4. Create a virtual environment **for Linux/macOS:**
    ```
     python3 -m venv .venv
    ```
