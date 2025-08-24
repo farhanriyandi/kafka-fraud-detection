@@ -57,9 +57,9 @@
 7. Run the Python Scripts
    * Terminal 1 → Run the consumer + transformer (so it’s ready to receive data and apply transformations immediately):
      ```
-     python consumer_transformer.py
+     python3 consumer_transformer.py
      ```
    * Terminal 2 → Run the data generator + producer (to send data into Kafka):
      ```
-     python data_generator.py
+     python3 data_generator.py
      ```
