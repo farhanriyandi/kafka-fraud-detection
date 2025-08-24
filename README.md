@@ -8,7 +8,9 @@
 2. Start the docker containers
     ```
     docker compose up -d
-    ```     
+    ```
+   You can open Kafka UI (web dashboard) at:  
+    👉 [http://localhost:8080/](http://localhost:8080/)
 
 3. Create 2 topics (transactions and transactions_scored):
 
@@ -41,7 +43,7 @@
     kafka-topics.sh --bootstrap-server localhost:19092 --describe --topic transactions_scored
     ```
 
-5. Create a virtual environment **For Linux/macOS:**
+4. Create a virtual environment **For Linux/macOS:**
    ```
     python3 -m venv .venv
    ```
@@ -50,7 +52,7 @@
    ```
    **Note:** You can use other methods to create and activate a virtual environment depending on your operating system or personal preference.
 
-6. Install the dependencies
+5. Install the dependencies
     ```
     pip install -r requirements.txt
     ```
