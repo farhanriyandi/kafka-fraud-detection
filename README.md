@@ -57,9 +57,9 @@
 7. Run the Python Scripts
    * Terminal 1 → Run the consumer + transformer (so it’s ready to receive data and apply transformations immediately):
      ```
-     python3 consumer_transformer.py
+     python3 fraud_detection_pipeline/consumer_transformer.py
      ```
    * Terminal 2 → Run the data generator + producer (to send data into Kafka):
      ```
-     python3 data_generator.py
+     python3 fraud_detection_pipeline/data_generator.py
      ```
