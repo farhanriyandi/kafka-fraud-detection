@@ -1,4 +1,4 @@
 dockervol
 tmp
 __pycache__
-.env
+.my_env
