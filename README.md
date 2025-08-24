@@ -21,7 +21,14 @@ It simulates transactions, detects fraud risk, and publishes transformed message
      ```bash
      docker exec -it my-kafka bash
      ```
-
+     
+     **Note:** If you are using Linux and encounter permission issues, try:
+     ```
+     sudo chown -R 1001:1001 ./dockervol/kafka
+     docker compose up -d
+     ```
+     Then repeat the step ```docker exec -it my-kafka bash ``` above.
+    
    * Create `transactions` topic:
      ```bash
      kafka-topics.sh --create --topic transactions --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
@@ -65,3 +72,4 @@ It simulates transactions, detects fraud risk, and publishes transformed message
      ```
      python3 fraud_detection_pipeline/data_generator.py
      ```
+
