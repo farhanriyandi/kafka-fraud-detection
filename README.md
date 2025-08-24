@@ -15,34 +15,31 @@
 
 3. Create 2 topics (transactions and transactions_scored):
 
-   * **Open a shell inside container:**
-   ```
-   docker exec -it my-kafka bash
-   ```
-   
-   * **Create transactions topic:**
-   ```
-   kafka-topics.sh --create --topic transactions --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
-   ```
+   * Open a shell inside the Kafka container:
+     ```bash
+     docker exec -it my-kafka bash
+     ```
 
-   * **Create transactions_scored topic:**
-   ```
-   kafka-topics.sh --create --topic transactions_scored --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
-   ```
+   * Create `transactions` topic:
+     ```bash
+     kafka-topics.sh --create --topic transactions --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+     ```
 
-   * **List topics:**
-   ```
-   kafka-topics.sh --bootstrap-server localhost:19092 --list
-   ```
+   * Create `transactions_scored` topic:
+     ```bash
+     kafka-topics.sh --create --topic transactions_scored --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+     ```
 
-   * **Describe topics:**
-    ```
-    kafka-topics.sh --bootstrap-server localhost:19092 --describe --topic transactions
-    ```
+   * List topics:
+     ```bash
+     kafka-topics.sh --bootstrap-server localhost:9092 --list
+     ```
 
-    ```
-    kafka-topics.sh --bootstrap-server localhost:19092 --describe --topic transactions_scored
-    ```
+   * Describe topics:
+     ```bash
+     kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic transactions
+     kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic transactions_scored
+     ```
 
 4. Create a virtual environment **For Linux/macOS:**
    ```
