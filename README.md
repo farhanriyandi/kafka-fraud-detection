@@ -1,4 +1,6 @@
 # kafka-fraud-detection
+A simple Kafka-based data pipeline for fraud detection.  
+It simulates transactions, detects fraud risk, and publishes transformed messages.
 
 ## How to run
 1. Clone the repo
