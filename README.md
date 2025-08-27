@@ -63,7 +63,8 @@ It simulates transactions, detects fraud risk, and publishes transformed message
     ```
     pip install -r requirements.txt
     ```
-7. Run the Python Scripts
+    
+6. Run the Python Scripts
    * Terminal 1 → Run the consumer + transformer (so it’s ready to receive data and apply transformations immediately):
      ```
      python3 fraud_detection_pipeline/consumer_transformer.py
